@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Lista de Tarefas</title>
+    <style>
+        #listaTarefas {
+            list-style-type: none;
+            padding: 0;
+        }
+        .item-tarefa {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+        }
+        .item-tarefa button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerenciamento de Lista de Tarefas</h1>
+    <input type="text" id="novaTarefaInput" placeholder="Nova tarefa...">
+    <button id="adicionarTarefaBotao">Adicionar Tarefa</button>
+    <ul id="listaTarefas">
+        <li class="item-tarefa">
+            <span>Exemplo de tarefa</span>
+            <div>
+                <button class="editarTarefaBotao">Editar</button>
+                <button class="removerTarefaBotao">Remover</button>
+            </div>
+        </li>
+        
+    </ul>
+
+    <script src="22-05-24.js"></script>
+</body>
+</html>
